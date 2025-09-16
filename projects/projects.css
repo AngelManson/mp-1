@@ -144,6 +144,7 @@ main ul li{
     #calculator button{
         border-radius: 30%;
         font-size: calc(2px + 2vw);
+        color: black;
     }
 
 }
