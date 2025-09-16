@@ -142,7 +142,7 @@ main ul li{
         height: 2.5vh;
     }
     #calculator button{
-        border-radius: 30%;
+        /*border-radius: 30%;*/
         font-size: calc(2px + 2vw);
         color: black;
     }
