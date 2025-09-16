@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projects | Angel's Resume</title>
+        <link rel="stylesheet" type="text/css" href="projects.css">
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <header>
+                <h1>Angel Manson</h1>
+                <p>Angel's Resume</p>
+            </header>
+            <div id="container">
+                <nav>
+                    <ul>
+                        <li> <a href="../index.html">Home</a></li>
+                        <li><a href="../education/edu.html">Education</a></li>
+                        <li><a href="../skills/skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="../exp/exp.html">Experiences</a></li>
+                        <li><a href="../lpd/lpd.html">Leadership</a></li>
+<!--                        <li><a href="../certs/certs.html">Certifications</a></li>-->
+<!--                        <li><a href="../ref/ref.html">References</a></li>-->
+                    </ul>
+                </nav>
+                <main>
+                    <h2>Projects</h2>
+<!--                    <h4>Management Tool</h4>-->
+<!--                    Should I change the project p tags to ul???-->
+                    <h4>Calculator (Assembly, C)</h4>
+                    <ul>
+                        <li>
+                            Collaborated with a classmate to develop a program in Assembly
+                            that takes in data and performs several bitwise calculator commands
+                        </li>
+                        <li>
+                            Successfully translated the Assembly program into C to enhance functionality and usability
+                        </li>
+                    </ul>
+                    <h4>Sudoku (Java)</h4>
+                    <ul>
+                        <li>
+                            Implemented a class representing a Sudoku puzzle using a 2D array
+                        </li>
+                        <li>
+                            Developed a recursive backtracking algorithm to solve Sudoku puzzles efficiently
+                        </li>
+                    </ul>
+                    <h4>Industry Analysis Team Project</h4>
+                    <ul>
+                        <li>
+                            Compared two companies within an assigned industry by researching and observing the strategies,
+                            functions, and financial aspects of both companies
+                        </li>
+                        <li>
+                            Collaborated with a team of 5 classmates to create several cohesive presentations based
+                            on our analyses
+                        </li>
+                    </ul>
+                    <div id="calculator">
+                        <h3>Calculator</h3>
+                        <label for="one"></label><input id="one">
+                        <label for="two"></label><input id="two">
+                        <br>
+                        <button onclick="doAdd()">+</button>
+                        <button onclick="doSubtract()">-</button>
+                        <button onclick="doMultiply()">*</button>
+                        <button onclick="doDivide()">/</button>
+                        <button onclick="doPower()">**</button>
+                        <button onclick="doClear()">Clear</button>
+                        <h2 id="output">Output</h2>
+                    </div>
+                </main>
+            </div>
+            <footer>
+                <p>All Rights Reserved by Angel Manson <a href="">Credits</a> &#169;</p>
+            </footer>
+        </div>
+        <script src="../index.js"></script>
+    </body>
+</html>

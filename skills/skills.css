@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+/*font size on slide 63*/
+#page-wrapper{
+    width:80vw;
+    background-color: rgba(202, 240, 248, 0.53);
+    margin: 0 auto;
+    text-align: center;
+    font-size: calc(2px + 1.2vw); /*added to calculate font size*/
+    font-family: Sansation, Newsreader, monospace;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+header, footer{
+    background-color: rgba(0, 119, 182, 0.8);
+}
+header{
+    padding-left: 1%; /*added myself*/
+    text-align: left;
+}
+
+nav{
+    background-color: rgba(0, 180, 216, 0.86);
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul{
+    padding-left: 0;
+    list-style: none;
+    width: 100%; /* changed from 80 to 100 so that mobile nav will fill out whole row and the boxes are wider*/
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav li{
+    border: 5px solid #79d3e3;
+    background-color: #79d3e3;
+    /*border-radius: 50%; removed to turn into boxes rather than circles*/
+    padding: 2%; /* changed from 2 to ... to have the nav items boxes be bigger*/
+    margin: 4%; /* added by me to try to get some space between the boxes*/
+    width: 80%;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+main{
+    height: 100vh;
+    width: 70%;
+    font-size: calc(2px + 0.85vw);
+}
+
+/*self added sections*/
+main h2{
+    margin: 2%;
+    text-align: center;
+}
+
+main h3 {
+    margin: 1%;
+    /*text-align: left;*/
+    color: rgba(5, 46, 62, 0.86);
+}
+
+main ul{
+    padding-left: 0;
+    list-style: none;
+    width: 100%;
+    margin: 0%;
+    /*For circle design; added things below to move content to center of page*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*font-family: "Times New Roman", Times, serif; other font fills out nicer for this design*/
+}
+
+main ul li{
+    width: 70%; /*added this so that some of my words wouldnt go over the body's section box*/
+
+    /*below is the border-left design */
+    /*text-align: left;*/
+    /*margin: 2%;*/
+    /*padding-left: 2%;*/
+    /*border-left: 5px solid #79d3e3;*/
+
+    /*Below is the circle design*/
+    /*background-color: #79d3e3;*/
+    background-color: rgba(121, 211, 227, 0.6);
+    padding: .60%;
+    margin: 0.75%;
+    border-radius: 15px; /*is there a way to do this wi*/
+    /*border-radius: 48%;*/
+    text-align: center;
+}
+
+/* above is desktop. Below is phone */
+@media screen and (max-width: 1000px){
+    #container{
+        flex-direction: column;
+    }
+    nav{
+        width: 100%;
+    }
+    nav ul{
+        flex-direction: row;
+    }
+    nav li{ /*added myself*/
+        padding: 0.5%;
+        margin: 0.5%;
+        /*max-width: 20%;*/
+    }
+    header{
+        text-align: center;
+    }
+    main{
+        height: 100vh;
+        width: 100%;
+    }
+
+}
