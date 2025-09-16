@@ -31,7 +31,11 @@ function doMultiply(){
 }
 
 function doDivide(){
-    output.innerHTML = String(Number(one.value) / Number(two.value));
+    if (Number(two.value) === 0){
+        output.innerHTML = "Undefined";
+    } else {
+        output.innerHTML = String(Number(one.value) / Number(two.value));
+    }
     if (Number(output.innerHTML) < 0){
         output.style.color = "red";
     } else {

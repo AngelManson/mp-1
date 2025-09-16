@@ -136,6 +136,7 @@ main ul li{
     main{
         height: 100vh;
         width: 100%;
+        font-size: calc(2px + 2vw);
     }
     #calculator input{
         height: 2.5vh;
